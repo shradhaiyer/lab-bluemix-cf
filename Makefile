@@ -1,6 +1,6 @@
 # These can be overidden with env vars.
 REGISTRY ?= us.icr.io
-NAMESPACE ?= nyu-devops
+NAMESPACE ?= shradhaiyer
 IMAGE_NAME ?= lab-bluemix-cf
 IMAGE_TAG ?= 1.0
 IMAGE ?= $(REGISTRY)/$(NAMESPACE)/$(IMAGE_NAME):$(IMAGE_TAG)
@@ -50,7 +50,6 @@ test: ## Run the unit tests
 run: ## Run the service
 	$(info Starting service...)
 	honcho start
-
 ############################################################
 # COMMANDS FOR DEPLOYING THE IMAGE
 ############################################################
